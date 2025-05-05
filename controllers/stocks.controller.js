@@ -38,7 +38,7 @@ const searchBySymbol = async (req, res) => {
     }
 };
 
-const findAllFromDb = async (req, res) => {
+const findAllFromDb = async (req, res) => { // fetching stocks that are already available in db
     try {
         const stocks = await stockService.findAllFromDb();
         res.status(200).json(stocks);
