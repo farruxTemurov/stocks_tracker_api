@@ -6,7 +6,7 @@ const stockSchema = new mongoose.Schema({
     displaySymbol: String,
     figi: String,
     mic: String,
-    symbol: { type: String, unique: true },
+    symbol: { type: String, unique: true }, //unique: true ensures the symbol won't be duplicate 
     type: String
 });
 
